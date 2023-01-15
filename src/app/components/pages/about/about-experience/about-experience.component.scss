@@ -1,0 +1,103 @@
+@import '/src/sass/variables.scss';
+@import '/src/sass/mixins.scss';
+
+h2 {
+  @include h2-style;
+  color: #fff;
+}
+
+p {
+  color: #fff;
+}
+
+#tab__content--experience {
+  border-radius: .5rem;
+}
+
+#exp__subtab--wrapper {
+  display: flex;
+}
+
+#exp__subtab--links {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  min-height: 35rem;
+}
+
+.subtab__link {
+  background-color: $primary;
+  color: #fff;
+  padding: 0 1.5rem;
+  border: none;
+  font-size: 2.8rem;
+  font-family: 'Kaushan Script';
+  border-right: .1rem solid $accent;
+  height: 15rem;
+
+  &:first-of-type {
+    border-bottom: .1rem solid $accent;
+    border-top-left-radius: .5rem;
+  }
+
+  &:last-of-type {
+    border-bottom-left-radius: .5rem;
+  }
+}
+
+.subtab__link:hover {
+  @include accent-style;
+}
+
+#exp__subtab--content {
+  background-color: $primary;
+  padding: 3rem;
+  flex-basis: 70%;
+  border-radius: 0.5rem;
+  border-top-left-radius: 0;
+}
+// .selectedExp {
+//   @include accent-style;
+// }
+
+.active {
+  @include accent-style;
+}
+
+@media screen and (max-width: 1024px) {
+  #exp__subtab--wrapper {
+    flex-direction: column;
+  }
+
+  #exp__subtab--links {
+    margin-bottom: 2rem;
+    min-height: auto;
+  }
+
+  .subtab__link {
+    font-size: 2.3rem;
+    border-right: none;
+    padding: 1rem;
+    height: fit-content;
+
+    &:first-of-type {
+      border-top-right-radius: 0.5rem;
+    }
+
+    &:last-of-type {
+      border-bottom-right-radius: 0.5rem;
+    }
+  }
+
+  #exp__subtab--content {
+    border-radius: .5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .subtab__link {
+    font-size: 1.8rem;
+    padding: .4rem;
+  }
+}

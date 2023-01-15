@@ -1,0 +1,21 @@
+@import '/src/sass/variables.scss';
+@import '/src/sass/mixins.scss';
+
+#slider__container {
+  background-color: $primary;
+  color: #fff;
+  margin: 0 auto;
+  padding: 3rem 5rem;
+  border-radius: .5rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+  #slider__container {
+    background-color: transparent;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+}

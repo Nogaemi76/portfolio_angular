@@ -1,0 +1,46 @@
+@import '/src/sass/variables.scss';
+@import '/src/sass/mixins.scss';
+
+h2 {
+  @include h2-style;
+}
+
+#tab__content--about {
+  display: flex;
+  flex-direction: column;
+}
+
+#tab__profile {
+  display: flex;
+}
+
+#tab__profile--img {
+  background-color: $primary;
+  width: 60rem;
+  border-radius: .5rem;
+}
+
+#tab__profile--text {
+  padding-left: 2rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  #tab__content--about {
+    flex-direction: column;
+  }
+
+  #tab__profile {
+    flex-direction: column;
+  }
+
+  #tab__profile--img {
+    width: 100%;
+    height: 20rem;
+  }
+
+  #tab__profile--text {
+    padding-left: 0;
+  }
+}

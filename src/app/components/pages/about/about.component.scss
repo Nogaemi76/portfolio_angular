@@ -1,0 +1,63 @@
+@import '/src/sass/variables.scss';
+@import '/src/sass/mixins.scss';
+
+
+#about__container {
+  padding: 0 5rem;
+}
+
+#tab__links {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.tab__link {
+  background-color: $primary;
+  color: #fff;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  flex-basis: 25%;
+  padding: 1rem 0;
+  border: none;
+}
+
+.tab__link:first-of-type {
+  border-bottom-left-radius: .5rem;
+  border-top-left-radius: .5rem;
+}
+
+.tab__link:last-of-type {
+  border-bottom-right-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+.tab__link:hover, .visible-tab {
+  @include accent-style;
+}
+
+@media screen and (max-width: 1024px) {
+
+  #tab__links {
+    flex-direction: column;
+  }
+
+  .tab__link {
+    font-size: 1.6rem;
+    flex-basis: 100%;
+    border: .1rem solid #fff;
+    border-radius: .5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #about__container {
+    padding: 0 3rem;
+  }
+
+  .tab__link {
+    font-size: 1.4rem;
+    padding: .5rem 0;
+  }
+}

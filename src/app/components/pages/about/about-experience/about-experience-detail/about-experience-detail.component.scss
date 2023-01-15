@@ -1,0 +1,27 @@
+@import '/src/sass/variables.scss';
+@import '/src/sass/mixins.scss';
+
+h2 {
+  @include h2-style;
+  color: #fff;
+}
+
+p,
+ul,
+li {
+  color: #fff;
+}
+
+p {
+  font-weight: 700;
+  margin: 2rem 0 4rem 0;
+}
+
+li {
+  margin-bottom: 2rem;
+}
+
+i {
+  color: $accent;
+  font-weight: 900;
+}

@@ -1,0 +1,35 @@
+@mixin button ($background, $text, $width) {
+  background-color: $background;
+  color: $text;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  width: $width;
+  border-radius: 2rem;
+  padding: 1rem 0;
+}
+
+@mixin h2-style {
+  color: $primary;
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+  border-bottom: .5rem solid $accent;
+  border-bottom-right-radius: 5rem 3rem;
+}
+
+@mixin h2-accent-style {
+  color: $accent;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: .2rem solid $accent;
+}
+
+@mixin accent-style {
+  background-color: $accent;
+  color: $primary;
+}
+
+@mixin list-icon {
+  color: $accent;
+  font-weight: 900;
+}

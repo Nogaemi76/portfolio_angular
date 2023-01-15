@@ -1,0 +1,11 @@
+<div id="tab__content--skills" class="flex justify-center">
+  <div class="skill" *ngFor="let skill of skillList">
+    <h2>{{ skill.title }}</h2>
+    <ul>
+      <li *ngFor="let nestedSkill of skill.content" >
+        <i class="fa fa-code" aria-hidden="true"></i>
+        {{ nestedSkill }}
+      </li>
+    </ul>
+  </div>
+</div>

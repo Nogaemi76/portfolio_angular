@@ -1,0 +1,42 @@
+[
+    { "title": "Formation Concepteur Développeur d'Applications",
+      "school": "Simplon Montreuil",
+      "date": "Décembre 2020 - Novembre 2021 (1 an)",
+      "degrees": ["Titre professionnel RNCP Concepteur Développeur d'Applications - Novembre 2021"],
+      "stack": [{
+        "front": ["Intégration avec Bootstrap et Nebular", "Création de wireframes avec AxureRP et Figma"],
+        "back": ["Développement d'APIs REST en Node.js", "Implémentation d'un back organisé en couches - Architecture n-tiers", "Implémentation d’une logique métier d’authentification avec JWT, bCrypt, cookie parser", "Exploitation de l'ORM Sequelize avec MySQL dans une application back-end en Node.js"],
+        "autres": ["Mise en place de tests unitaires en Angular avec Jasmine et Karma", "Mise en place d'outils d'organisation et de gestion de projet (story mapping, gitlab kanboard)", "Conception et modélisation de bases de données avec UML"]
+      }]
+    },
+    { "title": "Formation Développeur web Fullstack JavaScript",
+      "school": "Simplon Nanterre",
+      "date": "Mai - Décembre 2019 (8 mois)",
+      "degrees": ["Titre professionnel RNCP Développeur Web et Web Mobile - Février 2020", "Certification Opquast Maîtrise de la qualité en projet Web, Avancé 845/1000", "Certification CNCP Méthodes agiles de gestion et amorçage de projet"],
+      "stack": [{
+        "front": ["Utilisation du framework Angular 8 avec Bootstrap et Angular Material"],
+        "back": ["Réalisation d’APIs avec NodeJS, Express.js, Mongoose/MongoDB, Axios/MySQL", "Affichage de pages web avec NodeJS, Express.js et EJS"],
+        "autres": ["Tests requêtes http avec Postman", "Réalisation de Wireframes sur Figma et Axure RP"]
+      }]
+    },
+    { "title": "Développer le Front d'une Application Mobile Android",
+      "school": "AFPA",
+      "date": "Février-Mars 2019 (6 semaines)",
+      "degrees": ["CCP1- Développer la partie Front End d'une application web et web Mobile (Partie 1/2 du titre de Développeur web et web Mobile) - Mars 2019"],
+      "stack": [{
+        "front": ["Développement d’applications mobiles natives Android", "Utilisation d'Android Studio et Genymotion", "Récupération de données sur des Web Services"],
+        "back": [],
+        "autres": ["Versioning GIT (GitLab, Source Tree)"]
+      }]
+    },
+    { "title": "Formation Développeur Web Front",
+      "school": "Cifap",
+      "date": "Avril - Septembre 2018 (5 mois)",
+      "degrees": ["Titre professionnel RNCP de Chef de projet multimédia - Septembre 2018"],
+      "stack": [{
+        "front": ["Intégration de sites Web (HTML5, CSS3, JavaScript) en Responsive", "Utilisation de la librairie jQuery (plugins) et d’APIs avec Ajax", "Theming WordPress avec PHP, phpMyAdmin et MAMP", "Plugins WordPress (Création de Custom fields et Taxonomies)"],
+        "back": [],
+        "autres": ["Versioning GIT (GitHub) & Taskrunner Gulp", "Initiation UI/UX et Prototypage avec Axure RP et Sketch"]
+      }]
+    }
+  ]

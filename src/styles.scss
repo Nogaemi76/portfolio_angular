@@ -1,1 +1,169 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import './sass/variables.scss';
+@import './sass/mixins.scss';
+
+html, body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 3rem
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Kaushan Script', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.3rem;
+}
+
+// CUSTOM STYLES
+
+.page__fullheight {
+  height: calc(100vh - 8rem);
+}
+
+
+// COLORS
+
+.bckg-primary {
+  background-color: $primary;
+}
+
+.bckg-white {
+  background-color: #fff;
+}
+
+.text-primary {
+  color: $primary;
+}
+
+.text-accent {
+  color: $accent;
+}
+
+.text-white {
+  color: #fff;
+}
+
+// FLEXBOX
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+
+  p, ul, li, button {
+    font-size: 1.4rem;
+  }
+
+  p {
+    line-height: 2.5rem
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    padding: 1.5rem 0;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  p, ul, li, button {
+    font-size: 1.2rem;
+  }
+
+  p {
+    line-height: 2rem
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,26 @@
+<div id="about__container">
+  <h1>À propos</h1>
+  <div>
+    <div id="tab__links" class="flex justify-between">
+      <button class="tab__link" (click)="showTab('skills')" [ngClass]="{'visible-tab': skillsTab }">Compétences</button>
+      <button class="tab__link" (click)="showTab('profile')" [ngClass]="{'visible-tab': profileTab }">Profil</button>
+      <button class="tab__link" (click)="showTab('education')" [ngClass]="{'visible-tab': educationTab }">Formation</button>
+      <button class="tab__link" (click)="showTab('exp')" [ngClass]="{'visible-tab': expTab }">Expérience</button>
+    </div>
+    <div>
+      <ng-container *ngIf="skillsTab">
+        <app-about-skills></app-about-skills>
+      </ng-container>
+      <ng-container *ngIf="profileTab">
+        <app-about-about></app-about-about>
+      </ng-container>
+      <ng-container>
+        <app-about-education *ngIf="educationTab"></app-about-education>
+      </ng-container>
+      <ng-container *ngIf="expTab">
+        <app-about-experience></app-about-experience>
+      </ng-container>
+    </div>
+  </div>
+</div>
+

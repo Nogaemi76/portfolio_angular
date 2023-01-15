@@ -1,0 +1,11 @@
+<div id="tab__content--experience">
+  <div id="exp__subtab--wrapper">
+    <div id="exp__subtab--links">
+      <button class="subtab__link" (click)="selectExp('poto')" [class.active]="selectedExp === this.poto">Mon Ami Poto</button>
+      <button class="subtab__link" (click)="selectExp('manufacture')" [class.active]="selectedExp === this.manufacture">La Manufacture Digitale</button>
+    </div>
+    <div id="exp__subtab--content">
+      <app-about-experience-detail [selected]="selectedExp"></app-about-experience-detail>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,124 @@
+@import '/src/sass/variables.scss';
+@import '/src/sass/mixins.scss';
+
+h2 {
+  @include h2-accent-style;
+}
+
+h3 {
+  color: $accent;
+  margin-top: 2rem;
+  padding-bottom: .5rem;
+  border-bottom: .1rem solid $accent;
+}
+
+h3, li {
+  margin-bottom: 1rem;
+}
+
+i {
+  @include list-icon;
+}
+
+#slider {
+  margin-bottom: 3rem;
+}
+
+#slider__buttons--wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.slider__button {
+  height: fit-content;
+  background-color: $accent;
+  color: $primary;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .5rem;
+
+  &:first-of-type {
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+  }
+
+  &:last-of-type {
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+  }
+}
+
+.slider__button i {
+  color: $primary;
+  font-size: 3rem;
+}
+
+.slider__button > span {
+  margin: 0 1rem;
+}
+
+#slider__dots--wrapper, .slider__dots {
+  width: 100%;
+}
+
+.slider__dots {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.slider__dots li {
+  margin-bottom: 0;
+}
+
+.slider__dots li i {
+  color: $accent;
+  font-size: 3.5rem;
+}
+
+#slide__wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  #slide__wrapper {
+    width: 100%;
+  }
+
+  h2, h3 {
+    color: $primary;
+  }
+
+  .slider__button {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .slider__button i {
+    font-size: 2.5rem;
+  }
+
+  .slider__button > span {
+    display: none;
+  }
+
+  .slider__dots li i {
+    color: $primary;
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .slider__button i {
+    font-size: 2rem;
+  }
+
+  .slider__dots li i {
+    font-size: 1.8rem;
+  }
+}

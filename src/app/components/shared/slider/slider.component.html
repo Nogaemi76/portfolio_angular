@@ -1,0 +1,47 @@
+<div id="slider">
+  <div id="slider__buttons--wrapper">
+    <div class="slider__button" (click)="goToPrevSlide()">
+      <i class="fa fa-chevron-left" aria-hidden="true"></i>
+      <span>Précédent</span>
+    </div>
+    <div id="slider__dots--wrapper">
+      <ul class="slider__dots">
+        <li *ngFor="let slide of slides, let i = index" (click)="goToSlide(i)">
+          <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </div>
+    <div class="slider__button" (click)="goToNextSlide()">
+      <span>Suivant</span>
+      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div id="slide__wrapper">
+    <div class="slide">
+      <h2>{{ currentSlide.title }}</h2>
+      <p><b>{{ currentSlide.school }}</b>, {{ currentSlide.date }}</p>
+      <div *ngIf="currentSlide.degrees.length !== 0">
+        <h3>Certifications</h3>
+        <ul>
+          <li *ngFor="let slide of currentSlide.degrees">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            {{ slide }}
+          </li>
+        </ul>
+      </div>
+      <div *ngFor="let stacklist of currentSlide.stack">
+        <div *ngFor="let stacks of stacklist | objectEntries">
+          <div *ngIf="stacks[1].length !== 0">
+            <h3>{{ stacks[0] | titlecase }}</h3>
+            <ul>
+              <li *ngFor="let stack of stacks[1]">
+                <i class="fa fa-code" aria-hidden="true"></i>
+                {{ stack }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

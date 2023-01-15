@@ -1,0 +1,48 @@
+@import '/src/sass/variables.scss';
+@import '/src/sass/mixins.scss';
+
+h2 {
+  @include h2-style;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+i {
+  @include list-icon;
+}
+
+#tab__content--skills {
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.skill {
+  border: .2rem solid $primary;
+  border-radius: .5rem;
+  box-shadow: .5rem .5rem $primary;
+  flex-basis: 35%;
+  padding: 1rem;
+  min-height: 18rem;
+
+  &:nth-of-type(2n + 1) {
+    margin-left: 10%;
+  }
+
+  &:nth-of-type(2n) {
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .skill {
+    flex-basis: 100%;
+    min-height: 15rem;
+
+    &:nth-of-type(2n + 1), &:nth-of-type(2n) {
+      margin: 0;
+    }
+  }
+}

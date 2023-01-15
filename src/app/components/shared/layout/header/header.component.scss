@@ -1,0 +1,71 @@
+@import '/src/sass/variables.scss';
+
+a {
+  color: #fff;
+}
+
+a:hover, a.active {
+  color: $accent;
+}
+
+header {
+  background-color: $primary;
+  color: #fff;
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 3rem;
+  color: $accent;
+  padding-left: 5rem;
+}
+
+nav#header__nav {
+  text-transform: uppercase;
+  // font-weight: 600;
+  width: 50%;
+  padding-right: 5rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+li {
+  font-size: 1.4rem;
+
+  &::after {
+    content: " ";
+    display: block;
+    background-color: $accent;
+    height: .2rem;
+    width: 0;
+    transition: all .2s ease-in-out;
+    margin: 0 auto;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+#header__burger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+      nav {
+          display: none;
+        }
+
+        #header__burger {
+          display: block;
+        }
+    }
+}
