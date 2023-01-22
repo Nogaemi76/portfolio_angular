@@ -1,0 +1,122 @@
+[
+    {
+      "title": "I love Japan",
+      "src": "assets/images/icons/fuji-mountain.png",
+     " alt": "icon_japan",
+      "message": "Let's talk about Japan"
+    },
+    {
+      "title": "Macha-zuki",
+      "src": "assets/images/icons/matcha.png",
+     " alt": "icon_macha",
+      "message": ""
+    },
+    {
+      "title": "Daruma Ichiraku",
+      "src": "assets/images/icons/daruma.png",
+     " alt": "icon_daruma",
+      "message": ""
+    },
+    {
+      "title": "Pompoko Forever",
+      "src": "assets/images/icons/tanuki.png",
+     " alt": "icon_tanuki",
+      "message": ""
+    },
+    {
+      "title": "Yokai Ichiban",
+      "src": "assets/images/icons/chochin-obake.png",
+     " alt": "icon_yokai",
+      "message": ""
+    },
+    {
+      "title": "Manga Translator",
+      "src": "assets/images/icons/languages.png",
+     " alt": "icon_translator",
+      "message": ""
+    },
+    {
+      "title": "Bookworm",
+      "src": "assets/images/icons/literature.png",
+     " alt": "icon_books",
+      "message": ""
+    },
+    {
+      "title": "Comics Geek",
+      "src": "assets/images/icons/comic.png",
+     " alt": "icon_comics",
+      "message": ""
+    },
+    {
+      "title": "Sci-fi Addict",
+      "src": "assets/images/icons/book.png",
+     " alt": "icon_scifi",
+      "message": ""
+    },
+    {
+      "title": "Bookseller At Heart",
+      "src": "assets/images/icons/book-shop.png",
+     " alt": "icon_bookshop",
+      "message": ""
+    },
+    {
+      "title": "Cat Person",
+      "src": "assets/images/icons/best-friends.png",
+     " alt": "icon_cat_person",
+      "message": ""
+    },
+    {
+      "title": "Puzzles Player",
+      "src": "assets/images/icons/puzzle.png",
+     " alt": "icon_puzzle",
+      "message": ""
+    },
+    {
+      "title": "Laptop Girl",
+      "src": "assets/images/icons/blogger.png",
+     " alt": "icon_laptop_girl",
+      "message": ""
+    },
+    {
+      "title": "Coding Lover",
+      "src": "assets/images/icons/programming.png",
+     " alt": "icon_computer",
+      "message": ""
+    },
+    {
+      "title": "Viva Cyberpunk",
+      "src": "assets/images/icons/artificial-intelligence.png",
+     " alt": "icon_cyberpunk",
+      "message": ""
+    },
+    {
+      "title": "Movies Geek",
+      "src": "assets/images/icons/cinema-screen.png",
+     " alt": "icon_movies",
+      "message": ""
+    },
+    {
+      "title": "Time travel rocks !",
+      "src": "assets/images/icons/time-machine.png",
+     " alt": "icon_time_machine",
+      "message": ""
+    },
+    {
+      "title": "Video Editor",
+      "src": "assets/images/icons/video-editing.png",
+     " alt": "icon_video_editing",
+      "message": ""
+    },
+    {
+      "title": "Cats Rule !",
+      "src": "assets/images/icons/cat.png",
+     " alt": "icon_cat",
+      "message": ""
+    },
+    {
+      "title": "Thanks to designers !",
+      "src": "assets/images/icons/thank-you.png",
+     " alt": "icon_thanks",
+      "message": ""
+    }
+  ]

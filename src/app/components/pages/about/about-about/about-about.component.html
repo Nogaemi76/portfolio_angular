@@ -1,34 +1,10 @@
 <div id="tab__content--about">
-  <div id="tab__profile">
-    <div id="tab__profile--img"></div>
-    <div id="tab__profile--text">
-      <h2>Former translator, now a developer</h2>
-      <p>Suspendisse potenti. Quisque fringilla turpis a metus elementum tristique. Fusce non sagittis nunc. Quisque nec
-        quam a
-        libero rhoncus congue. Morbi lorem augue, porttitor at auctor eget, volutpat ac dolor.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a sapien quis erat volutpat ultricies. Nullam
-        feugiat
-        blandit erat, sed hendrerit ipsum porta quis. Vivamus sodales, turpis eget faucibus euismod, ante augue sagittis
-        nibh,
-        facilisis ullamcorper erat ante at sapien. Sed sagittis imperdiet euismod.
-        Sed eget viverra lacus. Vivamus dignissim ac tortor sed volutpat. Donec vel imperdiet orci. Vivamus non magna
-        vitae
-        sapien vehicula pellentesque.</p>
+  <div id="about__grid" class="text-white">
+    <div class="box" *ngFor="let item of gridItems">
+      <div class="box__content">
+        <img src="{{item.src}}" alt="{{item.alt}}" (click)="showPopup(this.item.message)">
+        <h4>{{item.title}}</h4>
+      </div>
     </div>
-  </div>
-  <div id="tab__academics">
-    <h2>Ma formation en développement</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a sapien quis erat volutpat ultricies. Nullam
-      feugiat
-      blandit erat, sed hendrerit ipsum porta quis. Vivamus sodales, turpis eget faucibus euismod, ante augue sagittis
-      nibh,
-      facilisis ullamcorper erat ante at sapien. Sed sagittis imperdiet euismod.
-      Sed eget viverra lacus. Vivamus dignissim ac tortor sed volutpat. Donec vel imperdiet orci. Vivamus non magna
-      vitae
-      sapien vehicula pellentesque.</p>
-    <ul>
-      <li>Titre pro CDA</li>
-      <li>Titre pro DEV</li>
-    </ul>
   </div>
 </div>

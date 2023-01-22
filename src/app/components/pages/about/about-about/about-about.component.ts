@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GridItemInterface } from './grid-item.interface';
+import * as data from './profile.data.json';
 
 @Component({
   selector: 'app-about-about',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutAboutComponent implements OnInit {
 
+  gridItems : GridItemInterface[] = (data as any).default;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  showPopup(message: string) {
+    alert(message);
   }
 
 }
