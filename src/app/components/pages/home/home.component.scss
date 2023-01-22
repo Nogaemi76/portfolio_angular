@@ -5,11 +5,6 @@ h1 {
   text-align: left;
 }
 
-button {
-  @include button($accent, $primary, 45%);
-  margin-right: 3rem;
-}
-
 #home__container {
   width: 100%;
 }
@@ -25,6 +20,23 @@ button {
 
 #home__buttons--wrapper {
   margin-top: 3rem;
+  justify-content: space-between;
+}
+
+button:first-of-type {
+  @include button($accent, $primary, 45%);
+
+  &:hover {
+    background-color: lighten($accent, 10%);
+  }
+}
+
+button:last-of-type {
+  @include button(#fff, $primary, 45%);
+
+  &:hover {
+    background-color: lighten($primary, 60%);
+  }
 }
 
 #home__image {
@@ -57,13 +69,17 @@ button {
     flex-wrap: wrap;
   }
 
-  button, #home__text, #home__image {
+  button:first-of-type,
+  button:last-of-type,
+  #home__text,
+  #home__image {
     width: 100%;
   }
 
-  button {
-    padding: .5rem 0;
-    margin-right: 0;
+  button:first-of-type,
+  button:last-of-type {
+  padding: .5rem 0;
+  margin-right: 0;
   }
 
   #home__text {
@@ -75,7 +91,8 @@ button {
     height: fit-content;
   }
 
-  #home__buttons--wrapper, #home__buttons--wrapper button {
+  #home__buttons--wrapper,
+  #home__buttons--wrapper button {
     margin-bottom: 2rem;
   }
 
