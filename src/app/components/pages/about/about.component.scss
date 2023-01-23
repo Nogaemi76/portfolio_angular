@@ -23,13 +23,13 @@
 }
 
 .tab__link:first-of-type {
-  border-bottom-left-radius: .5rem;
-  border-top-left-radius: .5rem;
+  border-bottom-left-radius: $border-radius;
+  border-top-left-radius: $border-radius;
 }
 
 .tab__link:last-of-type {
-  border-bottom-right-radius: .5rem;
-  border-top-right-radius: .5rem;
+  border-bottom-right-radius: $border-radius;
+  border-top-right-radius: $border-radius;
 }
 
 .tab__link:hover, .visible-tab {
@@ -46,7 +46,7 @@
     font-size: 1.6rem;
     flex-basis: 100%;
     border: .1rem solid #fff;
-    border-radius: .5rem;
+    border-radius: $border-radius;
   }
 }
 

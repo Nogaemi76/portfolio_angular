@@ -11,7 +11,7 @@ p {
 }
 
 #tab__content--experience {
-  border-radius: .5rem;
+  border-radius: $border-radius;
 }
 
 #exp__subtab--wrapper {
@@ -37,11 +37,11 @@ p {
 
   &:first-of-type {
     border-bottom: .1rem solid $accent;
-    border-top-left-radius: .5rem;
+    border-top-left-radius: $border-radius;
   }
 
   &:last-of-type {
-    border-bottom-left-radius: .5rem;
+    border-bottom-left-radius: $border-radius;
   }
 }
 
@@ -53,7 +53,7 @@ p {
   background-color: $primary;
   padding: 3rem;
   flex-basis: 70%;
-  border-radius: 0.5rem;
+  border-radius: $border-radius;
   border-top-left-radius: 0;
 }
 // .selectedExp {
@@ -81,16 +81,16 @@ p {
     height: fit-content;
 
     &:first-of-type {
-      border-top-right-radius: 0.5rem;
+      border-top-right-radius: $border-radius;
     }
 
     &:last-of-type {
-      border-bottom-right-radius: 0.5rem;
+      border-bottom-right-radius: $border-radius;
     }
   }
 
   #exp__subtab--content {
-    border-radius: .5rem;
+    border-radius: $border-radius;
   }
 }
 

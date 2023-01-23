@@ -20,10 +20,10 @@ i {
 
 .skill {
   border: .2rem solid $primary;
-  border-radius: .5rem;
-  box-shadow: .5rem .5rem $primary;
+  border-radius: $border-radius;
+  box-shadow: 1rem 1rem $primary;
   flex-basis: 35%;
-  padding: 1rem;
+  padding: 2rem;
   min-height: 18rem;
 
   &:nth-of-type(2n + 1) {

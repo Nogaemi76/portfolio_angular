@@ -38,7 +38,7 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: .5rem;
+  border-radius: $border-radius;
 
   &:first-of-type {
     border-top-left-radius: 3rem;
