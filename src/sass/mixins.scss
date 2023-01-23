@@ -33,3 +33,8 @@
   color: $accent;
   font-weight: 900;
 }
+
+@mixin whratio($size) {
+  width: $size;
+  height: $size;
+}

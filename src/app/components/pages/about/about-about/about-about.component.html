@@ -2,9 +2,22 @@
   <div id="about__grid" class="text-white">
     <div class="box" *ngFor="let item of gridItems">
       <div class="box__content">
-        <img src="{{item.src}}" alt="{{item.alt}}" (click)="showPopup(this.item.message)">
-        <h4>{{item.title}}</h4>
+        <img src="{{ item.src }}" alt="{{ item.alt }}" (click)="aboutDialog.show()">
+        <h4>{{ item.title }}</h4>
       </div>
+      <dialog #aboutDialog>
+        <div id="dialog__wrapper">
+          <img id="dialog__close" src="assets/images/icons/close.png" alt="icon_close" (click)="aboutDialog.close()">
+          <div id="img__wrapper">
+            <img id="dialog__img" src="{{ item.src }}" alt="{{ item.alt }}">
+            <!-- <h4>{{ item.title }}</h4> -->
+          </div>
+          <div id="dialog__text">
+            <h4>{{ item.title }}</h4>
+            <p>{{ item.message }}</p>
+          </div>
+        </div>
+      </dialog>
     </div>
   </div>
 </div>
