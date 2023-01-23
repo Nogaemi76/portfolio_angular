@@ -12,7 +12,7 @@ export class AboutSkillsComponent implements OnInit {
       content: ['HTML, CSS, JavaScript', 'Angular, React, jQuery', 'Bootstrap, Angular Material, Nebular, SASS']
     },
     { title : 'UX Design',
-      content: ['Wireframing', 'Figma, Sketch, Axure RP']
+      content: ['Wireframing', 'Figma, Sketch, Axure RP', 'InDesign, Photoshop']
     },
     { title: 'Back-end',
       content: ['API REST, Node.js, Express', 'JWT, bCrypt', 'SQL, MySQL, MongoDB']
